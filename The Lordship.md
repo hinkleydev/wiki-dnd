@@ -14,6 +14,9 @@ those with lordship dont need to eat or drink, but can if they wish to.
 
 ## Current known holders
 Lenahn
+
 Emon
+
 Nash'Gsteuf
+
 Cille
