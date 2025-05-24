@@ -18,5 +18,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: hinkleydev/SadeWiki@main
+      - name: Build
+        uses: hinkleydev/SadeWiki@development
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          path: ${{ github.workspace }}/docs
