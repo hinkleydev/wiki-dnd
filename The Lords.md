@@ -9,3 +9,4 @@ The Lords are individuals that fought during the **Singularity**, a war between 
 ### Emon
 
 ### Nash'gsteuf
+beep boop
