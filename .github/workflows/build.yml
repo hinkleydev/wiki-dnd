@@ -26,4 +26,4 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
         with:
-          path: ${{ github.workspace }}/docs
+          path: ${{ github.workspace }}
