@@ -26,4 +26,4 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: /docs
+          path: /
