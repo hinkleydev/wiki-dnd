@@ -16,10 +16,6 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
@@ -31,5 +27,16 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ${{ github.workspace }}
+          
+  deploy:
+    needs: build
+    
+    runs-on: ubuntu-latest
+    
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+      
+    steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v3 # or specific "vX.X.X" version tag for this action
