@@ -43,4 +43,4 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v3 # or specific "vX.X.X" version tag for this action
         with:
-          name: wiki
+          artifact_name: wiki
