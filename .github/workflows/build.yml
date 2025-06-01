@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4 # Check out source so we can work on it
       - name: Build
-        uses: hinkleydev/SadeWiki@v0 # Build wiki
+        uses: hinkleydev/SadeWiki@main # Build wiki
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3 # Upload built site
         with:
